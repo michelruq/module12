@@ -7,6 +7,3 @@ set (HEAD_LST linkedlist.h node.h)
 set (CXX_FLAGS "${CXX_FLAGS} -std=c++11 - Wall")
 
 add_executable(linkedlist ${SRC_LIST} ${HEAD_LST})
-
-
-
