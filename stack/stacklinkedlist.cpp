@@ -119,4 +119,28 @@ void StackLinkedList::clear()
 StackLinkedList::~StackLinkedList()
 {
    clear();
-}	
+}
+
+void StackLinkedList::show()
+{
+	Node* ptrForCurrentMode = mHead;
+	while (ptrForCurrentMode != nullptr)
+    {
+	    std::cout << ptrForCurrentMode->mData;
+	    ptrForCurrentMode = ptrForCurrentMode->mNextPtr;        
+    }
+}
+
+bool StackLinkedList::find(std::uint32_t data)
+{
+	Node* ptrForCurrentMode = mHead;
+	while (ptrForCurrentMode != nullptr)
+    {
+	    if(ptrForCurrentMode->mData == data)
+		{
+			return true;
+		}
+	    ptrForCurrentMode = ptrForCurrentMode->mNextPtr;        
+    }
+	return false;
+}

@@ -46,6 +46,11 @@ int main(int argc, char* argv[])
 	}
 	result = (oStackLinkedList.isFull())?"complete":"incomplete";
 	std::cout << result << std::endl;
+	oStackLinkedList.show();
+	result = (oStackLinkedList.find(5))?"found":"not found";
+	std::cout << result << std::endl;
+	result = (oStackLinkedList.find(15))?"found":"not found";
+	std::cout << result << std::endl;
 	for (std::uint32_t i{0}; i < (ArraySize); ++i)
 	{
 		std::cout << oStackLinkedList.pop() << "    ";

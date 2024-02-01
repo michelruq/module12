@@ -20,6 +20,8 @@ class StackLinkedList
 	   std::uint32_t peek ();
 	   bool isFull();
 	   bool isEmpty();
+	   void show();
+	   bool find(std::uint32_t data);
 
        ~StackLinkedList();	   
 	
